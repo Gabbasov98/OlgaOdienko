@@ -6,6 +6,14 @@
         <div class="wrapper">
             @@include('components/page-blocks/_header.html',{"active":"index"})
             <main class="content">
+                <section class='breadcrumbs'>
+                    <div class='container'>
+                        <div class='breadcrumbs__inner'>
+                            <a href="" class="breadcrumbs__item">Главная</a>
+                            <span class="breadcrumbs__item">Цены</span>
+                        </div>
+                    </div>
+                </section>
 
                 <section class="prices">
                     <div class="container">
@@ -223,100 +231,105 @@
                     <div class="container">
                         <h2 class="certificates__title display2">Подарочные <span class="display3">сертификаты</span>
                         </h2>
-                        <div class="certificates__item">
-                            <div class="certificates__left">
-                                <h4 class="certificates__item-title">Сертификат 150 GEL</h4>
-                                <ul class="certificates__list main__list">
-                                    <li><span>К</span>онсультация по стилю и помощь в подборе образов</li>
-                                    <li><span>С</span>ъемка в течение 1 часа</li>
-                                    <li><span>5</span> фотографий в журнальной ретуши</li>
-                                    <li><span>30</span> фотографий в цветокоррекции</li>
-                                    <li><span>Ф</span>ото передаются через файло-обменник</li>
-                                    <li><span>С</span>рок отдачи: до 12 дней</li>
-                                    <li><span>С</span>рок действия: 3 месяца с момента приобретения</li>
-                                </ul>
-                                <div class="certificates__left-bottom">
-                                    <p class="certificates__price">Стоимость: <span>150 ₾</span></p>
-                                    <button class="certificates__btn main__btn btn btn-white">
-                                        <span>Приобрести <br>
-                                             сертификат</span>
-                                             <div class="certificates__arrow">
-                                                <img src="img/arrow.svg" alt="">
-                                             </div>
-                                    </button>
+                        <div class="certificates__items">
+                            <div class="certificates__item">
+                                <div class="certificates__left">
+                                    <h4 class="certificates__item-title">Сертификат 150 GEL</h4>
+                                    <ul class="certificates__list main__list">
+                                        <li><span>К</span>онсультация по стилю и помощь в подборе образов</li>
+                                        <li><span>С</span>ъемка в течение 1 часа</li>
+                                        <li><span>5</span> фотографий в журнальной ретуши</li>
+                                        <li><span>30</span> фотографий в цветокоррекции</li>
+                                        <li><span>Ф</span>ото передаются через файло-обменник</li>
+                                        <li><span>С</span>рок отдачи: до 12 дней</li>
+                                        <li><span>С</span>рок действия: 3 месяца с момента приобретения</li>
+                                    </ul>
+                                    <div class="certificates__left-bottom">
+                                        <p class="certificates__price">Стоимость: <span>150 ₾</span></p>
+                                        <button class="certificates__btn main__btn btn btn-white">
+                                            <span>Приобрести <br>
+                                                 сертификат</span>
+                                                 <div class="certificates__arrow">
+                                                    <img src="img/arrow.svg" alt="">
+                                                 </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="certificates__right">
+                                    <div class="certificates__right-img">
+                                        <img src="img/certificates1.png" alt="">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="certificates__right">
-                                <div class="certificates__right-img">
-                                    <img src="img/certificates1.png" alt="">
+                            <div class="certificates__item certificates__item--center">
+                                <div class="certificates__left">
+                                    <h4 class="certificates__item-title">Сертификат 150 GEL</h4>
+                                    <ul class="certificates__list main__list">
+                                        <li><span>К</span>онсультация по стилю и помощь в подборе образов</li>
+                                        <li><span>С</span>ъемка в течение 1 часа</li>
+                                        <li><span>5</span> фотографий в журнальной ретуши</li>
+                                        <li><span>30</span> фотографий в цветокоррекции</li>
+                                        <li><span>Ф</span>ото передаются через файло-обменник</li>
+                                        <li><span>С</span>рок отдачи: до 12 дней</li>
+                                        <li><span>С</span>рок действия: 3 месяца с момента приобретения</li>
+                                    </ul>
+                                    <div class="certificates__left-bottom">
+                                        <p class="certificates__price">Стоимость: <span>150 ₾</span></p>
+                                        <button class="certificates__btn main__btn btn btn-white">
+                                            <span>Приобрести <br>
+                                                 сертификат</span>
+                                                 <div class="certificates__arrow">
+                                                    <img src="img/arrow.svg" alt="">
+                                                 </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="certificates__right">
+                                    <div class="certificates__right-img">
+                                        <img src="img/certificates1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="certificates__item">
+                                <div class="certificates__left">
+                                    <h4 class="certificates__item-title">Сертификат Premium</h4>
+                                    <ul class="certificates__list main__list">
+                                        <li><span>К</span>онсультация по стилю и помощь в подборе образов</li>
+                                        <li><span>И</span>ндивидуальный подбор декора (2 фотозоны)</li>
+                                        <li><span>И</span>ндивидуальный подбор наряда (1 образ)</li>
+                                        <li><span>У</span>слуги визажиста</li>
+                                        <li><span>С</span>ъемка продолжительностью 3 часа</li>
+                                        <li><span>30</span> фотографий в журнальной ретуши</li>
+                                        <li><span>30</span> фотографий в цветокоррекции</li>
+                                        <li><span>Ф</span>ото передаются через файло-обменник</li>
+                                        <li><span>С</span>рок отдачи: до 14 дней</li>
+                                        <li><span>С</span>рок действия: 3 месяца с момента приобретения</li>
+                                    </ul>
+                                    <div class="certificates__left-bottom">
+                                        <p class="certificates__price">Стоимость: <span>500 ₾</span></p>
+                                        <button class="certificates__btn main__btn btn btn-white">
+                                            <span>Приобрести <br>
+                                                 сертификат</span>
+                                                 <div class="certificates__arrow">
+                                                    <img src="img/arrow.svg" alt="">
+                                                 </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="certificates__right">
+                                    <div class="certificates__right-img certificates__orange-img">
+                                        <img src="img/certificates2.png" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="certificates__item certificates__item-center">
-                            <div class="certificates__left certificates__left-center">
-                                <div class="certificates__right-img">
-                                    <img src="img/certificates1.png" alt="">
-                                </div>
-                            </div>
-                            <div class="certificates__right certificates__right-center">
-                                <h4 class="certificates__item-title">Сертификат 150 GEL</h4>
-                                <ul class="certificates__list main__list">
-                                    <li><span>К</span>онсультация по стилю и помощь в подборе образов</li>
-                                    <li><span>С</span>ъемка в течение 1 часа</li>
-                                    <li><span>5</span> фотографий в журнальной ретуши</li>
-                                    <li><span>30</span> фотографий в цветокоррекции</li>
-                                    <li><span>Ф</span>ото передаются через файло-обменник</li>
-                                    <li><span>С</span>рок отдачи: до 12 дней</li>
-                                    <li><span>С</span>рок действия: 3 месяца с момента приобретения</li>
-                                </ul>
-                                <div class="certificates__left-bottom">
-                                    <p class="certificates__price">Стоимость: <span>350 ₾</span></p>
-                                    <button class="certificates__btn main__btn btn btn-white">
-                                        <span>Приобрести <br>
-                                             сертификат</span>
-                                             <div class="certificates__arrow">
-                                                <img src="img/arrow.svg" alt="">
-                                             </div>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="certificates__item certificates__item-bottom">
-                            <div class="certificates__left">
-                                <h4 class="certificates__item-title">Сертификат Premium</h4>
-                                <ul class="certificates__list main__list">
-                                    <li><span>К</span>онсультация по стилю и помощь в подборе образов</li>
-                                    <li><span>И</span>ндивидуальный подбор декора (2 фотозоны)</li>
-                                    <li><span>И</span>ндивидуальный подбор наряда (1 образ)</li>
-                                    <li><span>У</span>слуги визажиста</li>
-                                    <li><span>С</span>ъемка продолжительностью 3 часа</li>
-                                    <li><span>30</span> фотографий в журнальной ретуши</li>
-                                    <li><span>30</span> фотографий в цветокоррекции</li>
-                                    <li><span>Ф</span>ото передаются через файло-обменник</li>
-                                    <li><span>С</span>рок отдачи: до 14 дней</li>
-                                    <li><span>С</span>рок действия: 3 месяца с момента приобретения</li>
-                                </ul>
-                                <div class="certificates__left-bottom">
-                                    <p class="certificates__price">Стоимость: <span>500 ₾</span></p>
-                                    <button class="certificates__btn main__btn btn btn-white">
-                                        <span>Приобрести <br>
-                                             сертификат</span>
-                                             <div class="certificates__arrow">
-                                                <img src="img/arrow.svg" alt="">
-                                             </div>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="certificates__right">
-                                <div class="certificates__right-img certificates__orange-img">
-                                    <img src="img/certificates2.png" alt="">
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </section>
 
-
+                <section class='consult'>
+                    @@include('components/page-blocks/_consult.html')
+                </section>
 
             </main>
             @@include('components/page-blocks/_footer.html')

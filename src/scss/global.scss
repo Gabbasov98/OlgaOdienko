@@ -5,12 +5,11 @@ html {
 
 .page {
     min-height: 100vh;
-    background: #F3F6F9;
+    padding-top: 90px;
     background-image: url(../img/bg.webp);
     background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 100% auto;
-    padding-top: 90px;
+    // background-position: center top;
+    background-size: 100% 223px;
 }
 
 .wrapper {
@@ -46,7 +45,8 @@ body {
 
 @media screen and (max-width: 992px) {
     .page {
-        background-size: auto 227px;
+        background-size: 100% 257px;
+        background-image: url(../img/bg2.webp);
         background-position: center top;
         padding-top: 157px;
     }
@@ -54,8 +54,6 @@ body {
 
 @media screen and (max-width: 500px) {
     .page {
-        background-image: url(../img/bg2.webp);
-        background-size: 100% auto;
-        // background-position: center top;
+        background-size: 100% 230px;
     }
 }

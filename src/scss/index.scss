@@ -1002,6 +1002,56 @@
     }
 }
 
+.consult {
+    padding: 50px 0 120px;
+    &__inner {
+        padding-left: 525px;
+        position: relative;
+    }
+    &__right {
+        flex-grow: 1;
+    }
+    &__img {
+        background-color: $black;
+        position: absolute;
+        left: 0;
+        top: 26px;
+        width: 443px;
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 30px;
+            height: 30px;
+            border: 1px solid $yellow;
+            top: 20px;
+            right: -10px;
+        }
+        img {
+            width: 100%;
+            display: block;
+            transform: translate(30px, 30px);
+        }
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 78px;
+        max-width: 600px;
+        color: $yellow;
+    }
+    &__hint {
+        margin-top: 58px;
+        max-width: 460px;
+    }
+    &__form {
+        margin-top: 55px;
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 1100px) {}
+
 @media screen and (min-width: 992px) {
     .portfolio {
         .swiper-wrapper {
@@ -1106,6 +1156,14 @@
             margin-top: 60px;
         }
     }
+    .consult {
+        &__inner {
+            padding-left: 475px;
+        }
+        .consult-form__btn {
+            margin-left: 20px;
+        }
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1160,6 +1218,36 @@
         }
         &__btn {
             transform: translateX(-50%);
+        }
+    }
+    .consult {
+        padding: 50px 0 90px;
+        &__inner {
+            padding: 0;
+        }
+        &__img {
+            position: relative;
+            margin: 45px auto 0;
+            top: unset;
+            left: unset;
+        }
+        &__title {
+            max-width: 100%;
+            text-align: center;
+            line-height: 100%;
+        }
+        &__form {
+            margin: 30px auto 0;
+        }
+        .consult-form__btn {
+            position: relative;
+            left: unset;
+            top: unset;
+            margin: 50px auto 0;
+            transform: translateX(25px);
+        }
+        &__hint {
+            margin: 70px auto 0;
         }
     }
 }
@@ -1632,6 +1720,31 @@
         &__btn {
             width: 190px;
             margin: 0 auto;
+        }
+    }
+    .consult {
+        &__img {
+            max-width: 100%;
+            &::before {
+                top: 5px;
+                right: -15px;
+            }
+            img {
+                transform: translate(20px, 20px);
+            }
+        }
+        &__title {
+            font-weight: 600;
+            &-item1 {
+                display: block;
+                font-size: 64px;
+            }
+            &-item2 {
+                font-size: 36px;
+                line-height: 44px;
+                display: block;
+                margin-top: 17px;
+            }
         }
     }
 }
