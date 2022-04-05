@@ -1,0 +1,6 @@
+@import '../mixins';
+@include font-face('Gilroy', 'Gilroy-Regular', 400);
+@include font-face('Gilroy', 'Gilroy-Medium', 500);
+@include font-face('Cormorant', 'Cormorant-Medium', 500);
+@include font-face('Cormorant', 'Cormorant-SemiBold', 600);
+@include font-face('Cormorant', 'Cormorant-Bold', 700);

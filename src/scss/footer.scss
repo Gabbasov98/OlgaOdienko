@@ -1,0 +1,175 @@
+.footer {
+    background-image: url(../img/footer-bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 75px 0 55px;
+    &__logo {
+        width: 226px;
+        display: block;
+        margin: 0 auto;
+        img {
+            width: 100%;
+        }
+    }
+    &__nav {
+        margin-top: 35px;
+    }
+    &__link {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.3);
+        display: block;
+        text-align: center;
+        font-family: $font2;
+        &:hover {
+            color: $yellow;
+        }
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 35px;
+    }
+    &__city {
+        display: flex;
+        align-items: center;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.06em;
+        color: rgba(#fff, 0.5);
+        font-family: $font2;
+        img {
+            margin-right: 5px;
+        }
+    }
+    &__phone {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+        font-family: $font2;
+        img {
+            flex-shrink: 0;
+            margin-right: 10px;
+            width: 12px;
+        }
+        &:hover {
+            color: $yellow;
+        }
+    }
+    &__socials {
+        display: flex;
+        align-items: center;
+        &-item {
+            width: 27px;
+            height: 27px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:not(:last-child) {
+                margin-right: 7px;
+            }
+            &:hover {
+                background: #8E7E64;
+            }
+            &--whatsapp {
+                background: #24C25F;
+            }
+            &--telegram {
+                background: #039BE5;
+                box-shadow: 0px 0px 93px rgba(0, 0, 0, 0.09);
+            }
+            &--instagram {
+                background: #E1306C;
+            }
+            &--facebook {
+                background: #3B5998;
+            }
+        }
+    }
+    &__conf {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-decoration-line: underline;
+        color: #FFFFFF;
+        opacity: 0.6;
+        display: block;
+        max-width: 170px;
+        font-family: $font2;
+        &:hover {
+            color: $yellow;
+        }
+    }
+    &__by {
+        margin-top: 32px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.06em;
+        font-family: $font2;
+        color: #FFFFFF;
+    }
+    &__btn {
+        transform: translateX(15px);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        padding: 91px 0 82px;
+        &__nav {
+            margin-top: 42px;
+        }
+        &__link {
+            &:not(:last-child) {
+                margin-bottom: 42px;
+            }
+        }
+        &__wrap {
+            flex-direction: column;
+        }
+        &__btn {
+            order: 1;
+            margin-top: 42px;
+        }
+        &__phone {
+            order: 2;
+            margin-top: 45px;
+        }
+        &__socials {
+            order: 3;
+            margin-top: 42px;
+        }
+        &__city {
+            order: 4;
+            margin-top: 42px;
+        }
+        &__conf {
+            order: 5;
+            margin-top: 42px;
+        }
+        &__by {
+            margin-top: 42px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer {
+        background-image: url(../img/footer-bg2.webp);
+    }
+}

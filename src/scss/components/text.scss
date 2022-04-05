@@ -1,0 +1,46 @@
+.display1,
+.display2 {
+    font-weight: 500;
+    font-size: 200px;
+    line-height: 107%;
+}
+
+.display3 {
+    font-size: 144px;
+    line-height: 100%;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1200px) {
+    .display1,
+    .display2 {
+        font-size: 140px;
+    }
+    .display3 {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .display1,
+    .display2 {
+        font-size: 100px;
+    }
+    .display3 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .display1 {
+        font-size: 80px;
+        line-height: 100%;
+    }
+    .display2 {
+        font-size: 64px;
+        line-height: 100%;
+    }
+    .display3 {
+        font-size: 48px;
+    }
+}

@@ -1,0 +1,217 @@
+@import "../vars";
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    transition: all ease-out .225s;
+    padding: 0;
+    letter-spacing: 0.02em;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.btn-black {
+    width: 174px;
+    height: 44px;
+    font-weight: 500;
+    color: #FFFFFF;
+    position: relative;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(0deg, #2D2D33, #2D2D33), linear-gradient(180deg, #2D2D33 0%, #252529 100%);
+        border-radius: 23px;
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        padding: 0 6px;
+        span {
+            display: block;
+        }
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        background: #1B1B1F;
+        border-radius: 23px;
+        width: calc(100% - 4px);
+        height: calc(100% + 1px);
+        top: 2px;
+        left: 2px;
+        box-sizing: border-box;
+        transition: all .225s;
+    }
+    i {
+        margin-left: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 33px;
+        height: 33px;
+        background: #1B1B1F;
+        border-radius: 50%;
+        flex-shrink: 0;
+    }
+    &:hover {
+        color: #FFFFFF;
+        .btn-black__inner {
+            background: #1B1B1F;
+        }
+        &::before {
+            opacity: 0;
+        }
+    }
+}
+
+.btn-black2 {
+    background: $black;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    font-family: $font;
+    &:hover {
+        background: $light;
+        color: $black;
+    }
+}
+
+.btn-black3 {
+    width: 190px;
+    height: 190px;
+    flex-direction: column;
+    background-color: $black;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    border-radius: 50%;
+    align-items: flex-start;
+    padding: 0 48px;
+    svg {
+        margin-top: 10px;
+    }
+    &:hover {
+        background-color: $light;
+        color: $black;
+        g rect {
+            fill: $black;
+        }
+    }
+}
+
+.btn-white {
+    width: 248px;
+    height: 248px;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        z-index: 2;
+        border: 1px solid #FFFFFF;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        border-radius: 50%;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transform: translate(-31px, 27px);
+        background-color: $black;
+        transition: all .225s;
+    }
+    img {
+        position: absolute;
+        left: 67px;
+        bottom: 55px;
+        z-index: 2;
+    }
+    span {
+        text-align: left;
+        z-index: 2;
+        position: relative;
+    }
+    &:hover {
+        color: #fff;
+        &::before {
+            transform: translate(0, 0);
+        }
+    }
+}
+
+.btn-white2 {
+    width: 174px;
+    height: 44px;
+    font-weight: 500;
+    color: $black;
+    position: relative;
+    font-family: $font2;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $yellow;
+        border-radius: 23px;
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        padding: 0 6px;
+        span {
+            display: block;
+        }
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        background: #8E7E64;
+        border-radius: 23px;
+        width: 170px;
+        height: 45px;
+        top: 2px;
+        left: 2px;
+        box-sizing: border-box;
+        transition: all .225s;
+    }
+    i {
+        margin-left: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 33px;
+        height: 33px;
+        background: #8E7E64;
+        border-radius: 50%;
+        flex-shrink: 0;
+    }
+    &:hover {
+        color: #FFFFFF;
+        .btn-black__inner {
+            background: #8E7E64;
+        }
+        &::before {
+            opacity: 0;
+        }
+    }
+}

@@ -1,0 +1,360 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"en", "title":"Главная", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body>
+    <div class="page">
+
+        <div class="wrapper">
+            @@include('components/page-blocks/_header.html',{"active":"index"})
+            <main class="content">
+
+                <section class='main'>
+                    <div class='container'>
+                        <div class='main__inner'>
+
+                            <div class="main__info">
+                                <div class="main__city">
+                                    <img src="img/pin.png" alt="">
+                                    <span>г. Батуми</span>
+                                </div>
+                                <div class="main__img">
+                                    <img src="img/ceo.webp" alt="">
+                                </div>
+                                <span class="main__prof">фотограф</span>
+                                <h1 class="main__title display1">
+                                    <span class="main__name">Ольга</span>
+                                    <span class="main__surname">Огиенко</span>
+                                </h1>
+                            </div>
+                            <div class="main__wrap">
+                                <ul class="main__list">
+                                    <li>Разработка индивидуальной концепции фотопроекта</li>
+                                    <li>Качественный фотоконтент для вашего бренда</li>
+                                    <li>Фотоальбом неповторимых моментов вашей жизни</li>
+                                </ul>
+                                <button class="main__btn btn btn-white">
+                                    <span>Связаться <br>
+                                        с фотографом</span>
+
+                                        <img src="img/arrow.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="main__items">
+                                <div class="main__item">
+                                    <img src="img/main-icon.svg" alt="">
+                                    <span>Получила 10 премий <br> от 35awards</span>
+                                </div>
+                                <div class="main__item">
+                                    <img src="img/main-icon2.svg" alt="">
+                                    <span>Снимаю для модных журналов</span>
+                                </div>
+                                <div class="main__item">
+                                    <img src="img/main-icon3.svg" alt="">
+                                    <span>Работаю с дизайнерами 
+                                        и модельными агентствами</span>
+                                </div>
+                                <div class="main__item">
+                                    <img src="img/main-icon4.svg" alt="">
+                                    <span>Обеспечиваю полную организацию фотосъемки</span>
+                                </div>
+                            </div>
+                            <div class="main__bg">
+                                <!-- <img src="img/girls.webp" alt=""> -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class='photosession'>
+                    @@include('components/page-blocks/_photosession.html')
+                </section>
+
+                <section class='portfolio'>
+                    @@include('components/page-blocks/_portfolio.html')
+                </section>
+
+                <section class='organization'>
+                    <div class='container'>
+                        <div class='organization__inner'>
+                            <div class="organization__subtitle">Организую вашу фотосессию</div>
+                            <h2 class="organization__title display3">
+                                <span class="organization__title-quote">«</span>
+                                <span class="organization__title-text">под ключ</span>
+                                <span class="organization__title-quote">»</span>
+                            </h2>
+                            <div class="organization__items">
+                                <div class="organization__item">
+                                    <img src="img/organization.svg" alt="">
+                                    <span>Мы проведём съемку <br> в крутом интерьере</span>
+                                </div>
+                                <div class="organization__item">
+                                    <img src="img/organization2.svg" alt="">
+                                    <span>Подберём у дизайнера <br> стильные образы</span>
+                                </div>
+                                <div class="organization__item">
+                                    <img src="img/organization3.svg" alt="">
+                                    <span>Лучшие визажисты <br> подчеркнут вашу красоту</span>
+                                </div>
+                                <div class="organization__item">
+                                    <img src="img/organization4.svg" alt="">
+                                    <span>А команда снимет <br> видео для сторис</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class='process'>
+                    <div class='container'>
+                        <div class='process__inner'>
+                            <div class="process__title">
+                                <span>
+                                    Всё это для того, чтобы вы <strong>насладились процессом,</strong>
+                                </span>
+                            </div>
+                            <div class="process__desc">
+                                <span>
+                                    и провели день съемок <strong>на волне позитива</strong>
+                                </span>
+                            </div>
+                            <div class="process__items">
+                                <div class="process__item">
+                                    <div class="process__item-img">
+                                        <img src="img/process.webp" alt="">
+                                    </div>
+                                    <span class="process__item-num">1</span>
+                                    <p class="process__item-title">Контент</p>
+                                    <ul class="process__item-list">
+                                        <li>Фотографии</li>
+                                        <li>Видео для сторис</li>
+                                    </ul>
+                                </div>
+                                <div class="process__item">
+                                    <div class="process__item-img">
+                                        <img src="img/process2.webp" alt="">
+                                    </div>
+                                    <span class="process__item-num">2</span>
+                                    <p class="process__item-title">Подбор локации</p>
+                                    <ul class="process__item-list">
+                                        <li>Фотостудия</li>
+                                        <li>Маршрут по локациям</li>
+                                    </ul>
+                                </div>
+                                <div class="process__item">
+                                    <div class="process__item-img">
+                                        <img src="img/process3.webp" alt="">
+                                    </div>
+                                    <span class="process__item-num">3</span>
+                                    <p class="process__item-title">Подбор образа</p>
+                                    <ul class="process__item-list">
+                                        <li>Макияж</li>
+                                        <li>Прическа</li>
+                                        <li>Одежда и стиль</li>
+                                    </ul>
+                                </div>
+                                <div class="process__item">
+                                    <div class="process__item-img">
+                                        <img src="img/process4.webp" alt="">
+                                    </div>
+                                    <span class="process__item-num">4</span>
+                                    <p class="process__item-title">Полное сопровождение</p>
+                                    <ul class="process__item-list">
+                                        <li>От первого звонка</li>
+                                        <li>До выдачи фотографий</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class='info'>
+                    <div class='container'>
+                        <div class='info__inner'>
+                            <div class="info__wrap">
+                                <div class="info__img">
+                                    <img src="img/ceo2.webp" alt="">
+                                </div>
+                                <div class="info__text">
+                                    <span>Просто забудьте об организационных моментах, 
+                                        все вопросы я возьму на себя</span>
+                                </div>
+                                <button class="info__btn btn btn-white">
+                                    <span>
+                                        Хочу <br> фотосессию <br> под ключ
+                                    </span>
+
+                                        <img src="img/arrow.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class='events'>
+                    <div class='container'>
+                        <div class='events__inner'>
+                            <div class="events__title">
+                                <span class="events__title-item1 display2">Календарь</span>
+                                <span class="events__title-item2 display3">мероприятий</span>
+                            </div>
+                            <div class="events__desc">Мероприятия, которые я провожу</div>
+                            <div class="events__table-top">
+                                <div class="events__table-title">
+                                    <img src="img/camera2.svg" alt="">
+                                    <span>Название</span>
+                                </div>
+                                <div class="events__table-title">
+                                    <img src="img/calendar.svg" alt="">
+                                    <span>Когда</span>
+                                </div>
+                                <div class="events__table-title">
+                                    <img src="img/clock.svg" alt="">
+                                    <span>Во сколько</span>
+                                </div>
+                                <div class="events__table-title"></div>
+                            </div>
+                            <div class="events__slider">
+                                <div class='swiper-container'>
+                                    <div class='swiper-wrapper'>
+                                        <div class='swiper-slide events__row'>
+                                            <div class="events__col">
+                                                <span class="events__name">Мастеркласс по фотографии для новичков + бесплатный гайд по обработке фото в инстаграм</span>
+                                            </div>
+                                            <div class="events__col">
+                                                <div class="events__table-title">
+                                                    <img src="img/calendar.svg" alt="">
+                                                    <span>Когда</span>
+                                                </div>
+                                                <span class="events__date">14 февраля</span>
+                                            </div>
+                                            <div class="events__col">
+                                                <div class="events__table-title">
+                                                    <img src="img/clock.svg" alt="">
+                                                    <span>Во сколько</span>
+                                                </div>
+                                                <span class="events__time">12:00</span>
+                                            </div>
+                                            <div class="events__col">
+                                                <button class="events__btn btn btn-black2">Записаться</button>
+                                                <a href="" class="events__more">Узнать подробнее</a>
+                                            </div>
+                                        </div>
+                                        <div class='swiper-slide events__row'>
+                                            <div class="events__col">
+                                                <span class="events__name">Мастеркласс по фотографии для новичков + бесплатный гайд по обработке фото в инстаграм</span>
+                                            </div>
+                                            <div class="events__col">
+                                                <div class="events__table-title">
+                                                    <img src="img/clock.svg" alt="">
+                                                    <span>Во сколько</span>
+                                                </div>
+                                                <span class="events__date">11 февраля</span>
+                                            </div>
+                                            <div class="events__col">
+                                                <div class="events__table-title">
+                                                    <img src="img/clock.svg" alt="">
+                                                    <span>Во сколько</span>
+                                                </div>
+                                                <span class="events__time">14:00</span>
+                                            </div>
+                                            <div class="events__col">
+                                                <button class="events__btn btn btn-black2">Записаться</button>
+                                                <a href="" class="events__more">Узнать подробнее</a>
+                                            </div>
+                                        </div>
+                                        <div class='swiper-slide events__row'>
+                                            <div class="events__col">
+                                                <span class="events__name">Мастеркласс по фотографии для новичков + бесплатный гайд по обработке фото в инстаграм</span>
+                                            </div>
+                                            <div class="events__col">
+                                                <div class="events__table-title">
+                                                    <img src="img/clock.svg" alt="">
+                                                    <span>Во сколько</span>
+                                                </div>
+                                                <span class="events__date">2 февраля</span>
+                                            </div>
+                                            <div class="events__col">
+                                                <div class="events__table-title">
+                                                    <img src="img/clock.svg" alt="">
+                                                    <span>Во сколько</span>
+                                                </div>
+                                                <span class="events__time">16:00</span>
+                                            </div>
+                                            <div class="events__col">
+                                                <button class="events__btn btn btn-black2">Записаться</button>
+                                                <a href="" class="events__more">Узнать подробнее</a>
+                                            </div>
+                                        </div>
+                                        <div class='swiper-slide events__row'>
+                                            <div class="events__col">
+                                                <span class="events__name">Мастеркласс по фотографии для новичков + бесплатный гайд по обработке фото в инстаграм</span>
+                                            </div>
+                                            <div class="events__col">
+                                                <div class="events__table-title">
+                                                    <img src="img/clock.svg" alt="">
+                                                    <span>Во сколько</span>
+                                                </div>
+                                                <span class="events__date">29 января</span>
+                                            </div>
+                                            <div class="events__col">
+                                                <div class="events__table-title">
+                                                    <img src="img/clock.svg" alt="">
+                                                    <span>Во сколько</span>
+                                                </div>
+                                                <span class="events__time">18:00</span>
+                                            </div>
+                                            <div class="events__col">
+                                                <button class="events__btn btn btn-black2">Записаться</button>
+                                                <a href="" class="events__more">Узнать подробнее</a>
+                                            </div>
+                                        </div>
+                                        <div class='swiper-slide events__row'>
+                                            <div class="events__col">
+                                                <span class="events__name">Мастеркласс по фотографии для новичков + бесплатный гайд по обработке фото в инстаграм</span>
+                                            </div>
+                                            <div class="events__col">
+                                                <div class="events__table-title">
+                                                    <img src="img/clock.svg" alt="">
+                                                    <span>Во сколько</span>
+                                                </div>
+                                                <span class="events__date">24 января</span>
+                                            </div>
+                                            <div class="events__col">
+                                                <div class="events__table-title">
+                                                    <img src="img/clock.svg" alt="">
+                                                    <span>Во сколько</span>
+                                                </div>
+                                                <span class="events__time">20:00</span>
+                                            </div>
+                                            <div class="events__col">
+                                                <button class="events__btn btn btn-black2">Записаться</button>
+                                                <a href="" class="events__more">Узнать подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="events__slider-nav">
+                                <div class='swiper-button-prev'>
+                                    @@include('img/arrow-prev.svg')
+                                </div>
+                                <span class="portfolio__slider-nav-title">
+                                    Листать галерею
+                                </span>
+                                <div class='swiper-button-next'>
+                                    @@include('img/arrow.svg')
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('components/page-blocks/_footer.html')
+        </div>
+    </div>
+    @@include('components/page-blocks/_popups.html')
+    <!--  -->
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>
