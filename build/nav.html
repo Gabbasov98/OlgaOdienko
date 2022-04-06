@@ -28,6 +28,7 @@
 <style>
     .wrapper a {
         font-size: 30px;
+        text-transform: uppercase;
     }
     
     .wrapper strong {
@@ -46,6 +47,8 @@
         width: 400px;
         height: 65px;
         font-size: 20px;
+        max-width: 100%;
+        text-transform: uppercase;
     }
 </style>
 
@@ -58,10 +61,43 @@
         <a href="prices.html" style="display: block; margin-bottom: 20px;">
             Цены
         </a>
+        <a href="about.html" style="display: block; margin-bottom: 20px;">
+            Обо мне
+        </a>
+        <a href="portfolio.html" style="display: block; margin-bottom: 20px;">
+            Портфолио
+        </a>
+        <a href="contacts.html" style="display: block; margin-bottom: 20px;">
+            Контакты
+        </a>
 
-        <!-- <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#selectObject">
-            Выбрать объект
-        </button> -->
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#consultModal">
+            Связаться с фотографом
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#thanksModal">
+            Я получила ваши данные
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#photoModal">
+            Записаться на фотосессию
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#photoModal2">
+            Записаться на фотосессию 2
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#photoModal3">
+            Записаться на фотосессию 3
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#photoModal4">
+            Заказать фотосессию под ключ
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#eventModal">
+            Записаться на мероприятие
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#eventModal2">
+            Я получила ваши данные на мероприятие
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#eventModal3">
+            Узнать подробнее о мероприятии
+        </button>
 
 
 
@@ -71,53 +107,468 @@
 
     </div>
 
-    <div class="modal fade" id="addPatent" aria-labelledby="addPatentLabel" aria-hidden="true">
+    <div class="modal fade" id="consultModal" aria-labelledby="consultModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-        <div class="modal__top">
-            <div class="modal__title">Добавить патент</div>
-            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.41401 6.00001L11.707 1.70701C12.098 1.31601 12.098 0.684006 11.707 0.293006C11.316 -0.0979941 10.684 -0.0979941 10.293 0.293006L6.00001 4.58601L1.70701 0.293006C1.31601 -0.0979941 0.684006 -0.0979941 0.293006 0.293006C-0.0979941 0.684006 -0.0979941 1.31601 0.293006 1.70701L4.58601 6.00001L0.293006 10.293C-0.0979941 10.684 -0.0979941 11.316 0.293006 11.707C0.488006 11.902 0.744006 12 1.00001 12C1.25601 12 1.51201 11.902 1.70701 11.707L6.00001 7.41401L10.293 11.707C10.488 11.902 10.744 12 11 12C11.256 12 11.512 11.902 11.707 11.707C12.098 11.316 12.098 10.684 11.707 10.293L7.41401 6.00001Z" fill="#85949E"/>
-                </svg>
-            </button>
-        </div>
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <img src="img/close.svg" alt="">
+        </button>
         <div class="modal__content">
 
-            <div class="modal__form">
-                <fieldset class='form-group form-group--error'>
-                    <label>Серия и номер</label>
-                    <input type='text' />
-                    <span class="form-group__error">Обязательное поле</span>
-                </fieldset>
-                <fieldset class='form-group'>
-                    <label>Дата выдачи</label>
-                    <div class="date-input">
-                        <input type='text' class="" />
-                    </div>
-                </fieldset>
-                <fieldset class='form-group'>
-                    <label>Дата окончания</label>
-                    <div class="date-input">
-                        <input type='text' class="" />
-                    </div>
-                </fieldset>
-                <fieldset class='form-group modal__form-group--full'>
-                    <label>Кем выдан</label>
-                    <input type='text' />
-                </fieldset>
+            <div class="modal__title">
+                <span class="modal__title-item1">Связаться</span>
+                <span class="modal__title-item2">с фотографом</span>
             </div>
 
+            <div class="modal__hint hint-block">
+                <span>
+                    Оставьте свои данные, и по указанному номеру
+                    <strong>я свяжусь с вами в ближайшее время</strong> для обсуждения деталей вашей фотосессии
+                </span>
+            </div>
+
+            <form class="modal__form consult-form">
+                <div class="consult-form__grid">
+                    <fieldset class='form-group consult-form__group'>
+                        <input type='text' placeholder="Ваше имя" />
+                    </fieldset>
+                    <fieldset class='form-group consult-form__group'>
+                        <input type='tel' placeholder="Телефон" />
+                    </fieldset>
+                </div>
+                <p class="consult-form__hint">
+                    Нажимая на кнопку “Связаться” вы соглашаетесь с
+                    <a href="">политикой обработки персональных данных</a>
+                </p>
+                <button class="consult-form__btn btn btn-white">
+                    <span>Связаться</span>
+                    <img src="img/arrow.svg" alt="">
+                </button>
+            </form>
         </div>
 
-        <div class="modal__bottom">
-            <div class="migrant-doc__file file-input">
-                <input type="file" name="" id="file1">
-                <label for="file1">Загрузить фото/скан</label>
-            </div>
-            <button class="modal__btn btn btn-blue">Сохранить</button>
-        </div>
     </div>
 </div>
+
+<div class="modal fade thanks-modal" id="thanksModal" aria-labelledby="thanksModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal__content">
+
+            <div class="modal__title">
+                <span class="modal__title-item1">Я получила</span>
+                <span class="modal__title-item2">ваши данные</span>
+            </div>
+
+            <div class="modal__hint hint-block">
+                <span>
+                    И свяжусь с вами <strong>в ближайшее время </strong>
+                    для обсуждения деталей вашей фотосессии
+                </span>
+            </div>
+
+            <button class="modal__btn btn btn-black" data-bs-dismiss="modal" aria-label="Close">
+                <span class="btn-black__inner">
+                    <span>Отлично</span>
+                </span>
+            </button>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="modal fade photo-modal" id="photoModal" aria-labelledby="photoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <img src="img/close.svg" alt="">
+        </button>
+        <div class="modal__content">
+            <div class="modal__img">
+                <img src="img/modal-img.webp" alt="">
+            </div>
+            <div class="modal__title2">Индивидуальная фотосессия</div>
+
+            <ul class="modal__list">
+                <li>
+                    <strong>Длительность съемки:</strong> от 1 часа
+                </li>
+                <li>
+                    <strong>Обработанные фото:</strong> 10 шт.
+                </li>
+                <li>
+                    <strong>Фото в цветокоррекции:</strong> 30 шт.
+                </li>
+                <li>
+                    <strong>Срок обработки:</strong> 10 д.
+                </li>
+            </ul>
+
+            <div class="modal__price">
+                <span>Стоимость:</span> 250 ₾
+            </div>
+
+            <button class="photo-modal__btn btn btn-white">
+                <span>
+                    Записаться  <br>
+                    на фотосессию
+                </span>
+                <img src="img/arrow.svg" alt="">
+            </button>
+
+
+        </div>
+
+    </div>
+</div>
+
+<div class="modal fade photo-modal" id="photoModal2" aria-labelledby="photoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <img src="img/close.svg" alt="">
+        </button>
+        <div class="modal__content">
+            <div class="modal__img">
+                <img src="img/modal-img.webp" alt="">
+            </div>
+
+
+            <div class="modal__title">
+                <span class="modal__title-item1">Записаться</span>
+                <span class="modal__title-item2">на фотосессию</span>
+            </div>
+
+            <div class="modal__badges">
+                <div class="modal__badge">Индивидуальная</div>
+            </div>
+
+            <div class="modal__hint hint-block">
+                <span>
+                    Оставьте свои данные, и по указанному номеру
+                    <strong>я свяжусь с вами в ближайшее время</strong> для обсуждения деталей вашей фотосессии
+                </span>
+            </div>
+
+            <form class="modal__form consult-form">
+                <div class="consult-form__grid">
+                    <fieldset class='form-group consult-form__group'>
+                        <input type='text' placeholder="Ваше имя" />
+                    </fieldset>
+                    <fieldset class='form-group consult-form__group'>
+                        <input type='tel' placeholder="Телефон" />
+                    </fieldset>
+                </div>
+                <p class="consult-form__hint">
+                    Нажимая на кнопку “Связаться” вы соглашаетесь с
+                    <a href="">политикой обработки персональных данных</a>
+                </p>
+                <button class="consult-form__btn btn btn-white">
+                    <span>Связаться</span>
+                    <img src="img/arrow.svg" alt="">
+                </button>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="modal fade photo-modal" id="photoModal3" aria-labelledby="photoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <img src="img/close.svg" alt="">
+        </button>
+        <div class="modal__content">
+            <div class="modal__img">
+                <img src="img/modal-img2.webp" alt="">
+            </div>
+
+
+            <div class="modal__title">
+                <span class="modal__title-item1">Записаться</span>
+                <span class="modal__title-item2">на фотосессию</span>
+            </div>
+
+            <div class="modal__select">
+                <div class="custom-select">
+                    <div class="custom-select__target">
+                        <input type="text" placeholder="Выберите тип фотосессии">
+                    </div>
+                    <div class="custom-select__dropdown">
+                        <div class="custom-select__dropdown-inner">
+                            <div class="custom-select__dropdown-item">Лукбук/Каталог</div>
+                            <div class="custom-select__dropdown-item">Бьюти/Реклама</div>
+                            <div class="custom-select__dropdown-item">Контент</div>
+                            <div class="custom-select__dropdown-item">Модельные тесты</div>
+                            <div class="custom-select__dropdown-item">Портфолио</div>
+                            <div class="custom-select__dropdown-item">Творческий проект</div>
+                            <div class="custom-select__dropdown-item">Семейная/Love story</div>
+                            <div class="custom-select__dropdown-item">Индивидуальная</div>
+                            <div class="custom-select__dropdown-item">Фотопрогулка</div>
+                            <div class="custom-select__dropdown-item">Детская</div>
+                            <div class="custom-select__dropdown-item">Новогодняя</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal__hint hint-block">
+                <span>
+                    Оставьте свои данные, и по указанному номеру
+                    <strong>я свяжусь с вами в ближайшее время</strong> для обсуждения деталей вашей фотосессии
+                </span>
+            </div>
+
+            <form class="modal__form consult-form">
+                <div class="consult-form__grid">
+                    <fieldset class='form-group consult-form__group'>
+                        <input type='text' placeholder="Ваше имя" />
+                    </fieldset>
+                    <fieldset class='form-group consult-form__group'>
+                        <input type='tel' placeholder="Телефон" />
+                    </fieldset>
+                </div>
+                <p class="consult-form__hint">
+                    Нажимая на кнопку “Связаться” вы соглашаетесь с
+                    <a href="">политикой обработки персональных данных</a>
+                </p>
+                <button class="consult-form__btn btn btn-white">
+                    <span>Связаться</span>
+                    <img src="img/arrow.svg" alt="">
+                </button>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="modal fade photo-modal photo-modal2" id="photoModal4" aria-labelledby="photoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <img src="img/close.svg" alt="">
+        </button>
+        <div class="modal__content">
+            <div class="modal__img">
+                <img src="img/modal-img3.webp" alt="">
+                <div class="modal__author">
+                    Ваш фотограф
+                    <strong>Ольга Огиенко</strong>
+                </div>
+            </div>
+
+
+            <div class="modal__title3">
+                <span class="modal__title3-item1">Заказать фотосессию</span>
+                <span class="modal__title3-item2">под ключ</span>
+            </div>
+
+            <div class="modal__select">
+                <div class="custom-select">
+                    <div class="custom-select__target">
+                        <input type="text" placeholder="Выберите тип фотосессии">
+                    </div>
+                    <div class="custom-select__dropdown">
+                        <div class="custom-select__dropdown-inner">
+                            <div class="custom-select__dropdown-item">Лукбук/Каталог</div>
+                            <div class="custom-select__dropdown-item">Бьюти/Реклама</div>
+                            <div class="custom-select__dropdown-item">Контент</div>
+                            <div class="custom-select__dropdown-item">Модельные тесты</div>
+                            <div class="custom-select__dropdown-item">Портфолио</div>
+                            <div class="custom-select__dropdown-item">Творческий проект</div>
+                            <div class="custom-select__dropdown-item">Семейная/Love story</div>
+                            <div class="custom-select__dropdown-item">Индивидуальная</div>
+                            <div class="custom-select__dropdown-item">Фотопрогулка</div>
+                            <div class="custom-select__dropdown-item">Детская</div>
+                            <div class="custom-select__dropdown-item">Новогодняя</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal__hint hint-block">
+                <span>
+                    Оставьте свои данные, и по указанному номеру
+                    <strong>я свяжусь с вами в ближайшее время</strong> для обсуждения деталей вашей фотосессии
+                </span>
+            </div>
+
+            <form class="modal__form consult-form">
+                <div class="consult-form__grid">
+                    <fieldset class='form-group consult-form__group'>
+                        <input type='text' placeholder="Ваше имя" />
+                    </fieldset>
+                    <fieldset class='form-group consult-form__group'>
+                        <input type='tel' placeholder="Телефон" />
+                    </fieldset>
+                </div>
+                <p class="consult-form__hint">
+                    Нажимая на кнопку “Заказать” вы соглашаетесь с
+                    <a href="">политикой обработки персональных данных</a>
+                </p>
+                <button class="consult-form__btn btn btn-white">
+                    <span>Заказать</span>
+                    <img src="img/arrow.svg" alt="">
+                </button>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="modal fade photo-modal photo-modal3" id="eventModal" aria-labelledby="eventModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <img src="img/close.svg" alt="">
+        </button>
+        <div class="modal__content">
+            <div class="modal__img">
+                <img src="img/modal-img4.webp" alt="">
+            </div>
+
+
+            <div class="modal__title">
+                <span class="modal__title-item1">Записаться</span>
+                <span class="modal__title-item2">на мероприятие</span>
+            </div>
+
+            <div class="modal__badge2">
+                Мастеркласс по фотографии для новичков + бесплатный гайд по обработке фото в инстаграм
+            </div>
+
+            <div class="modal__dates">
+                <div class="modal__dates-item">
+                    <strong>Дата:</strong> 14 февраля, 16:00
+                </div>
+                <div class="modal__dates-item">
+                    <strong>Место:</strong> ул. Чавчавадзе, 31
+                </div>
+            </div>
+
+
+            <form class="modal__form consult-form">
+                <div class="consult-form__grid">
+                    <fieldset class='form-group consult-form__group'>
+                        <input type='text' placeholder="Ваше имя" />
+                    </fieldset>
+                    <fieldset class='form-group consult-form__group'>
+                        <input type='text' placeholder="Ваша фамилия" />
+                    </fieldset>
+                    <fieldset class='form-group consult-form__group consult-form__group--full'>
+                        <input type='tel' placeholder="Телефон" />
+                    </fieldset>
+                </div>
+                <p class="consult-form__hint">
+                    Нажимая на кнопку “Оплатить билет” вы соглашаетесь с
+                    <a href="">политикой обработки персональных данных</a>
+                </p>
+                <div class="modal__price">
+                    <span>Стоимость:</span> 250 ₾
+                </div>
+                <button class="consult-form__btn btn btn-white">
+                    <span>
+                        Оплатить <br> билет <br>
+                        <span class="red-text">Осталось 12 мест</span>
+                    </span>
+                    <img src="img/arrow.svg" alt="">
+                </button>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="modal fade thanks-modal" id="eventModal2" aria-labelledby="eventModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <img src="img/close.svg" alt="">
+        </button>
+        <div class="modal__content">
+
+            <div class="modal__title3">
+                <span class="modal__title3-item1">Ваша запись</span>
+                <span class="modal__title3-item2">подтверждена</span>
+            </div>
+
+            <div class="modal__hint hint-block">
+                <span>
+                    Имя Фамилия, вы успешно внесены в список участников, до встречи на мероприятии
+                </span>
+            </div>
+
+            <div class="modal__badge2">
+                Мастеркласс по фотографии для новичков + бесплатный гайд по обработке фото в инстаграм
+            </div>
+
+            <div class="modal__dates">
+                <div class="modal__dates-item">
+                    <strong>Дата:</strong> 14 февраля, 16:00
+                </div>
+                <div class="modal__dates-item">
+                    <strong>Место:</strong> ул. Чавчавадзе, 31
+                </div>
+            </div>
+
+            <button class="modal__btn btn btn-black" data-bs-dismiss="modal" aria-label="Close">
+                <span class="btn-black__inner">
+                    <span>До встречи</span>
+                </span>
+            </button>
+        </div>
+
+    </div>
+</div>
+
+<div class="modal fade event-modal" id="eventModal3" aria-labelledby="eventModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <img src="img/close.svg" alt="">
+        </button>
+        <div class="modal__content">
+
+            <div class="modal__title">Мастеркласс по фотографии для новичков + бесплатный гайд по обработке фото в инстаграм</div>
+
+            <div class="event-modal__desc">
+                На мастерклассе мы с вами разберём базовые приемы разных типов фотосъемок, а также нет сомнений, что сделанные на базе интернет-аналитики выводы лишь добавляют фракционных разногласий и ассоциативно распределены по отраслям. Также как перспективное планирование
+                предопределяет высокую востребованность кластеризации усилий. Не следует, однако, забывать, что социально-экономическое развитие выявляет срочную потребность новых принципов формирования материально-технической и кадровой базы!
+            </div>
+
+            <div class="event-modal__bottom">
+                <div class="event-modal__left">
+                    <ul class="modal__list">
+                        <li>
+                            <strong>Спикеры: </strong> Ольга Огиенко
+                        </li>
+                        <li>
+                            <strong>Формат: </strong> Встреча
+                        </li>
+                        <li>
+                            <strong>Место встречи: ул.Чавчавадзе, 31</strong> (Вход в стеклянную дверь рядом с пунктом обмена валюты, справа от входа в магазин Альта Окей, 2 этаж). Арт Студия «White Rabbit»
+                        </li>
+                        <li>
+                            <strong>Дата: </strong> 14 февраля, 16:00
+                        </li>
+                    </ul>
+                </div>
+                <div class="event-modal__right">
+                    <div class="modal__price">
+                        <span>Стоимость:</span> 250 ₾
+                    </div>
+                    <button class="event-modal__btn btn btn-white">
+                        <span>
+                            Записаться <br>на мероприятие
+                        </span>
+                        <img src="img/arrow.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- <div class="modal-backdrop show"></div> -->
     <!--  -->
     <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>

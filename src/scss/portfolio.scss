@@ -1,0 +1,102 @@
+@import "vars";
+.portfolio-page {
+    padding: 90px 0 50px;
+    overflow: hidden;
+    &__title {
+        text-align: center;
+        color: $yellow;
+    }
+    &__tabs {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 62px;
+    }
+    &__tab {
+        &-more {
+            display: none;
+        }
+    }
+    .tab {
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 14px;
+        min-width: 180px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 153%;
+        color: $black;
+        border: none;
+        background-color: $light;
+        margin: 10px 5px 0 !important;
+        &--active {
+            color: #fff;
+            background-color: $black;
+        }
+        &:hover {
+            color: $black;
+            background-color: $yellow;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .portfolio-page {
+        padding: 45px 0;
+        .pagination {
+            display: none;
+        }
+        &__tabs {
+            margin-top: 32px;
+        }
+        &__tab-more {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 153%;
+            margin-top: 18px;
+            img {
+                margin-left: 13px;
+                flex-shrink: 0;
+            }
+            &-hidden {
+                display: none;
+            }
+            &--active {
+                img {
+                    transform: rotate(180deg);
+                }
+                .portfolio-page__tab-more {
+                    &-show {
+                        display: none;
+                    }
+                    &-hidden {
+                        display: unset;
+                    }
+                }
+            }
+        }
+        .tab {
+            &--hidden {
+                display: none;
+            }
+            &--show {
+                display: flex;
+            }
+        }
+        .portfolio__slider {
+            margin-top: 40px;
+            &-nav {
+                margin-top: 35px;
+                width: 100%;
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+}

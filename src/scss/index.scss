@@ -1054,10 +1054,12 @@
 
 @media screen and (min-width: 992px) {
     .portfolio {
-        .swiper-wrapper {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px 20px;
+        &__slider {
+            .swiper-wrapper {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 40px 20px;
+            }
         }
         &__item {
             &:nth-child(3),
@@ -1230,6 +1232,7 @@
             margin: 45px auto 0;
             top: unset;
             left: unset;
+            transform: translateX(-20px);
         }
         &__title {
             max-width: 100%;
@@ -1394,22 +1397,11 @@
                     }
                 }
             }
-        }
-        .swiper-button {
-            &-prev,
-            &-next {
-                position: relative;
-                width: 62px;
-                height: 62px;
-                border-radius: 50%;
-                margin-top: 0;
-                opacity: 1 !important;
-                background-color: $black;
-                &:hover {
-                    background-color: $yellow;
-                    g rect {
-                        fill: $black;
-                    }
+            .swiper-button {
+                &-prev,
+                &-next {
+                    position: relative;
+                    margin-top: 0;
                 }
             }
         }
@@ -1680,18 +1672,7 @@
             &-prev,
             &-next {
                 position: relative;
-                width: 62px;
-                height: 62px;
-                border-radius: 50%;
                 margin-top: 0;
-                opacity: 1 !important;
-                background-color: $black;
-                &:hover {
-                    background-color: $yellow;
-                    g rect {
-                        fill: $black;
-                    }
-                }
             }
         }
         &__row {

@@ -1,0 +1,89 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"en", "title":"Контакты", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body>
+    <div class="page">
+
+        <div class="wrapper">
+            @@include('components/page-blocks/_header.html',{"active":"index"})
+            <main class="content">
+                <section class='breadcrumbs'>
+                    <div class='container'>
+                        <div class='breadcrumbs__inner'>
+                            <a href="" class="breadcrumbs__item">Главная</a>
+                            <span class="breadcrumbs__item">Контакты</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class='contacts'>
+                    <div class='container'>
+                        <h1 class="contacts__title display2">Контакты</h1>
+                        <div class='contacts__inner'>
+                            <div class="contacts__subtitle">
+                                <div class="contacts__subtitle-inner">
+                                    Фотограф
+                                    <strong>Ольга Огиенко</strong>
+                                </div>
+                            </div>
+                            <div class="contacts__img">
+                                <img src="img/ceo2.webp" alt="">
+                            </div>
+                            <div class="contacts__info">
+                                <div class="contacts__info-item">
+                                    <span class="contacts__info-icon">
+                                            <img src="img/phone.svg" alt="">
+                                        </span>
+                                    <span class="contacts__info-title">
+                                            <strong>Телефон:</strong> <a href="tel:+995551597701">+995 551 59 77 01</a>
+                                        </span>
+                                </div>
+                                <div class="contacts__info-item">
+                                    <span class="contacts__info-icon">
+                                            <img src="img/pin2.svg" alt="">
+                                        </span>
+                                    <span class="contacts__info-title">
+                                            <strong>Фотографирую в Батуми и по всей Грузии</strong>
+                                        </span>
+                                </div>
+                                <div class="contacts__info-item contacts__info-item--socials">
+                                    <span class="contacts__info-icon">
+                                            <img src="img/list-marker.svg" alt="">
+                                        </span>
+                                    <span class="contacts__info-title">
+                                            <strong>Я в соц.сетях:</strong>
+                                        </span>
+                                </div>
+                                <div class="contacts__socials">
+                                    <a href="" class="contacts__socials-item contacts__socials-item--whatsapp">
+                                        <img src="img/whatsapp.svg" alt="">
+                                    </a>
+                                    <a href="" class="contacts__socials-item contacts__socials-item--telegram">
+                                        <img src="img/telegram.svg" alt="">
+                                    </a>
+                                    <a href="" class="contacts__socials-item contacts__socials-item--instagram">
+                                        <img src="img/instagram.svg" alt="">
+                                    </a>
+                                    <a href="" class="contacts__socials-item contacts__socials-item--facebook">
+                                        <img src="img/facebook.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class='consult'>
+                    @@include('components/page-blocks/_consult.html')
+                </section>
+
+            </main>
+            @@include('components/page-blocks/_footer.html')
+        </div>
+    </div>
+    @@include('components/page-blocks/_popups.html')
+    <!--  -->
+    @@include('components/page-blocks/_scripts.html')
+
+</body>
+
+</html>

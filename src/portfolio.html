@@ -1,0 +1,61 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"en", "title":"Портфолио", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body>
+    <div class="page">
+
+        <div class="wrapper">
+            @@include('components/page-blocks/_header.html',{"active":"index"})
+            <main class="content">
+                <section class='breadcrumbs'>
+                    <div class='container'>
+                        <div class='breadcrumbs__inner'>
+                            <a href="" class="breadcrumbs__item">Главная</a>
+                            <span class="breadcrumbs__item">Портфолио</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class='portfolio-page tab-parent'>
+                    <div class='container'>
+                        <div class='portfolio-page__inner'>
+                            <h1 class="portfolio-page__title display2">Портфолио</h1>
+                            <div class="portfolio-page__tabs tabs">
+                                <div class="tab tab--active" data-tab-path="1">Лукбук/Каталог</div>
+                                <div class="tab" data-tab-path="2">Бьюти/Реклама</div>
+                                <div class="tab" data-tab-path="3">Контент</div>
+                                <div class="tab" data-tab-path="4">Модельные тесты</div>
+                                <div class="tab" data-tab-path="5">Портфолио</div>
+                                <div class="tab tab--hidden" data-tab-path="6">Творческий проект</div>
+                                <div class="tab tab--hidden" data-tab-path="7">Семейная/Love story</div>
+                                <div class="tab tab--hidden" data-tab-path="8">Индивидуальная</div>
+                                <div class="tab tab--hidden" data-tab-path="9">Фотопрогулка</div>
+                                <div class="tab tab--hidden" data-tab-path="10">Детская</div>
+                                <div class="tab tab--hidden" data-tab-path="11">Новогодняя</div>
+                                <button class="portfolio-page__tab-more">
+                                    <span class="portfolio-page__tab-more-show">Больше категорий</span>
+                                    <span class="portfolio-page__tab-more-hidden">Свернуть категории</span>
+                                    <img src="img/black-arrow.svg" alt="">
+                                </button>
+                            </div>
+                            @@include('components/page-blocks/_portfolio2.html')
+                            <!--  -->
+                            @@include('components/page-blocks/_pagination.html')
+                        </div>
+                    </div>
+                </section>
+
+                <section class='consult'>
+                    @@include('components/page-blocks/_consult.html')
+                </section>
+
+            </main>
+            @@include('components/page-blocks/_footer.html')
+        </div>
+    </div>
+    @@include('components/page-blocks/_popups.html')
+    <!--  -->
+    @@include('components/page-blocks/_scripts.html')
+
+</body>
+
+</html>

@@ -46,6 +46,13 @@ $(document).ready(function() {
     })
 
 
+    $(".tab").click(function() {
+        let path = $(this).attr("data-tab-path")
+        $(this).parents(".tab-parent").find(".tab").removeClass("tab--active")
+        $(this).parents(".tab-parent").find(`.tab[data-tab-path="${path}"]`).addClass("tab--active")
+        $(this).parents(".tab-parent").find(".tab__content").removeClass("tab__content--active")
+        $(this).parents(".tab-parent").find(`.tab__content[data-tab-path="${path}"]`).addClass("tab__content--active")
+    })
 
 
 })
