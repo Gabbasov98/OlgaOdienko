@@ -489,7 +489,6 @@
         }
     }
     &__link {
-        color: $yellow;
         display: block;
         &-inner {
             height: 100%;
@@ -523,6 +522,7 @@
             line-height: 70px;
             padding: 0 70px;
             width: 100%;
+            color: $yellow;
             span {
                 font-size: 38px;
                 line-height: 46px;

@@ -281,6 +281,7 @@
         }
     }
     &__item {
+        position: relative;
         &-img {
             transition: all .225s;
             img {
@@ -331,6 +332,12 @@
                 left: 0;
                 top: 0;
             }
+        }
+        &-crown {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     }
     .swiper {
