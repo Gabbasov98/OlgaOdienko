@@ -1,0 +1,65 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"en", "title":"Портфолио", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body>
+    <div class="page page--nobg">
+
+        <div class="wrapper">
+            @@include('components/page-blocks/_header.html',{"active":"index"})
+            <main class="content">
+
+
+                <section class='cabinet tab-parent'>
+                    <div class='container'>
+                        <div class='cabinet__inner'>
+                            <h1 class="cabinet__title">Приветствую,</h1>
+                            <div class="cabinet__subtitle">Олег Огиенко</div>
+
+                            <div class="cabinet__group">
+                                <div class="cabinet__group-title">Ваши альбомы:</div>
+                                <div class="cabinet__items">
+                                    <div class="cabinet__item">
+                                        <div class="cabinet__item-img">
+                                            <img src="img/cabinet.webp" alt="">
+                                        </div>
+                                        <div class="cabinet__item-bottom">
+                                            <div class="cabinet__item-info">
+                                                <a href="" class="cabinet__item-title">Фото для отбора</a>
+                                                <span class="cabinet__item-date">02.03.2022</span>
+                                            </div>
+                                            <button class="cabinet__item-download">
+                                                <img src="img/download.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="cabinet__item">
+                                        <div class="cabinet__item-img">
+                                            <img src="img/cabinet2.webp" alt="">
+                                        </div>
+                                        <div class="cabinet__item-bottom">
+                                            <div class="cabinet__item-info">
+                                                <a href="" class="cabinet__item-title">Отретушированные фото</a>
+                                                <span class="cabinet__item-date">14.03.2022</span>
+                                            </div>
+                                            <button class="cabinet__item-download">
+                                                <img src="img/download.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+            </main>
+            @@include('components/page-blocks/_footer.html')
+        </div>
+    </div>
+    @@include('components/page-blocks/_popups.html')
+    <!--  -->
+    @@include('components/page-blocks/_scripts.html')
+
+</body>
+
+</html>

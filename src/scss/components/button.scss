@@ -130,8 +130,7 @@
         border-radius: 50%;
         pointer-events: none;
     }
-    &:before {
-        content: '';
+    &__animate {
         position: absolute;
         z-index: 1;
         width: 100%;
@@ -140,6 +139,7 @@
         transform: translate(-31px, 27px);
         background-color: $black;
         transition: all .105s;
+        pointer-events: none;
     }
     img {
         position: absolute;
@@ -154,7 +154,7 @@
     }
     &:hover {
         color: #fff;
-        &::before {
+        & i {
             transform: translate(0, 0);
         }
     }

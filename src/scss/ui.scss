@@ -358,6 +358,24 @@ input {
             pointer-events: none;
         }
     }
+    &__back {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        img {
+            margin-right: 16px;
+        }
+    }
+    &__title {
+        text-align: left;
+        margin-top: 8px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 95%;
+        color: #DECBA4;
+    }
 }
 
 .pagination {
@@ -419,6 +437,9 @@ input {
             &:not(:last-child) {
                 margin-right: 30px;
             }
+        }
+        &__title {
+            font-size: 36px;
         }
     }
     .tab {

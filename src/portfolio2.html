@@ -1,0 +1,40 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"en", "title":"Портфолио", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body>
+    <div class="page page--nobg">
+
+        <div class="wrapper">
+            @@include('components/page-blocks/_header.html',{"active":"index"})
+            <main class="content">
+                <section class='breadcrumbs'>
+                    <div class='container'>
+                        <a href="" class="breadcrumbs__back">
+                            <img src="img/back.svg" alt="">
+                            <span>Назад</span>
+                        </a>
+                        <h1 class="breadcrumbs__title">Фото для отбора</h1>
+                    </div>
+                </section>
+
+                <section class='portfolio-page portfolio-page2 tab-parent'>
+                    <div class='container'>
+                        <div class='portfolio-page__inner'>
+
+                            @@include('components/page-blocks/_portfolio3.html')
+                            <!--  -->
+                        </div>
+                    </div>
+                </section>
+
+
+            </main>
+            @@include('components/page-blocks/_footer.html')
+        </div>
+    </div>
+    @@include('components/page-blocks/_popups.html')
+    <!--  -->
+    @@include('components/page-blocks/_scripts.html')
+
+</body>
+
+</html>

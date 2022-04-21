@@ -1,0 +1,95 @@
+@import "vars";
+.login {
+    flex-grow: 1;
+    padding: 40px 0 130px;
+    &__back {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.06em;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        img {
+            margin-right: 16px;
+        }
+    }
+    &__inner {
+        max-width: 610px;
+        margin: 0 auto;
+    }
+    &__title,
+    &__subtitle {
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 95%;
+        color: $yellow;
+        text-align: center;
+    }
+    &__subtitle {
+        font-size: 48px;
+        margin-bottom: 40px;
+    }
+    &__form {
+        background: #FFFFFF;
+        box-shadow: 0px 39px 102px rgba(0, 0, 0, 0.3);
+        padding: 78px 20px 250px;
+        position: relative;
+        margin-top: 17px;
+    }
+    &__fg {
+        width: 185px;
+        margin: 0 auto;
+    }
+    &__btn {
+        position: absolute;
+        bottom: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+        &::after {
+            border-color: $yellow;
+        }
+    }
+}
+
+.page--login {
+    background-image: url(../img/login-bg.png) !important;
+    background-size: cover !important;
+    .header {
+        background: #2D2D33;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .login {
+        &__title {
+            font-size: 64px;
+        }
+        &__subtitle {
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+        &__form {
+            padding: 40px 20px;
+        }
+        &__btn {
+            position: relative;
+            transform: unset;
+            bottom: unset;
+            left: unset;
+            margin: 30px auto 0;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .login {
+        padding: 40px 0;
+        &__title {
+            font-size: 48px;
+        }
+        &__subtitle {
+            font-size: 24px;
+        }
+    }
+}

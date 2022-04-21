@@ -41,6 +41,13 @@
     }
 }
 
+.portfolio-page2 {
+    padding-top: 40px;
+    .portfolio__slider {
+        margin-top: 0 !important;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .portfolio-page {
         padding: 45px 0;

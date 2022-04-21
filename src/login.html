@@ -1,0 +1,45 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"en", "title":"Портфолио", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body>
+    <div class="page page--login">
+
+        <div class="wrapper">
+            @@include('components/page-blocks/_header.html',{"active":"index"})
+            <main class="content">
+
+
+                <section class='login'>
+                    <div class='container'>
+                        <div class='login__inner'>
+                            <a href="" class="login__back">
+                                <img src="img/back.svg" alt="">
+                                <span>Назад</span>
+                            </a>
+                            <form action="" class="login__form">
+                                <h1 class="login__title">Вход</h1>
+                                <div class="login__subtitle">в личный кабинет</div>
+                                <fieldset class='form-group login__fg'>
+                                    <input type='password' placeholder="Введите пароль" />
+                                </fieldset>
+                                <button class="login__btn btn btn-white">
+                                    <span>Связаться</span>
+                                    <img src="img/arrow.svg" alt="">
+                                    <i class="btn-white__animate"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+
+            </main>
+            @@include('components/page-blocks/_footer.html')
+        </div>
+    </div>
+    @@include('components/page-blocks/_popups.html')
+    <!--  -->
+    @@include('components/page-blocks/_scripts.html')
+
+</body>
+
+</html>
